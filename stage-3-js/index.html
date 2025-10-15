@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SliceIt Pizza</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#hero">Hopp til hovedinnhold</a>
+
+    <header class="site-header">
+      <div class="container header-wrap">
+        <h1 class="logo"><a href="#hero">SliceIt Pizza</a></h1>
+        <nav class="nav" aria-label="Hovedmeny">
+          <a href="#meny">Meny</a>
+          <a href="#apningstider">Åpningstider</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="hero" class="hero" aria-labelledby="hero-title">
+        <div class="hero__text">
+          <h2 id="hero-title">Hjemmelaget pizza bakt i steinovn 🔥</h2>
+          <p>Ferske råvarer, sprø bunn, digg smak.</p>
+        </div>
+        <img
+          src="pizza.png"
+          alt="Sprø pizza rett fra ovnen"
+          class="hero__img"
+        />
+      </section>
+
+      <section id="meny" class="section" aria-labelledby="meny-title">
+        <h2 id="meny-title">Meny</h2>
+        <div class="grid">
+          <article class="card">
+            <div class="card__badges"><span class="badge">Bestselger</span></div>
+            <h3>Margherita</h3>
+            <p>Tomater, mozzarella, basilikum</p>
+            <p class="price" aria-label="Pris 199 kroner">199,-</p>
+          </article>
+
+          <article class="card">
+            <div class="card__badges"><span class="badge badge--new">Nyhet</span></div>
+            <h3>Pepperoni og Skinke</h3>
+            <p>Tomatsaus, jarlsberg, pepperoni, skinke</p>
+            <p class="price" aria-label="Pris 259 kroner">259,-</p>
+          </article>
+
+          <article class="card">
+            <div class="card__badges"><span class="badge badge--veg">Veg</span></div>
+            <h3>Veggisen</h3>
+            <p>Hvit saus, norwegia, paprika, sjampinjong, rødløk</p>
+            <p class="price" aria-label="Pris 249 kroner">249,-</p>
+          </article>
+
+          <article class="card">
+            <div class="card__badges"><span class="badge">Spicy</span></div>
+            <h3>Djevelen</h3>
+            <p>Tomatsaus, mozzarella, nduja, chili</p>
+            <p class="price" aria-label="Pris 269 kroner">269,-</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="apningstider" class="section" aria-labelledby="tider-title">
+        <h2 id="tider-title">Åpningstider</h2>
+        <ul class="opening-list">
+          <li><strong>Man–Tor:</strong> 11–21</li>
+          <li><strong>Fre–Lør:</strong> 11–23</li>
+          <li><strong>Søndag:</strong> 12–21</li>
+        </ul>
+      </section>
+
+      <section id="kontakt" class="section" aria-labelledby="kontakt-title">
+        <h2 id="kontakt-title">Kontakt oss</h2>
+        <form class="form" action="#" method="post" novalidate>
+          <div class="form__field">
+            <label for="navn">Navn</label>
+            <input id="navn" name="navn" type="text" required autocomplete="name" />
+          </div>
+
+          <div class="form__field">
+            <label for="antall">Antall personer</label>
+            <input
+              id="antall"
+              name="antall"
+              type="number"
+              min="1"
+              max="12"
+              inputmode="numeric"
+              required
+            />
+          </div>
+
+          <div class="form__field">
+            <label for="melding">Melding</label>
+            <textarea id="melding" name="melding" rows="8" autocomplete="off"></textarea>
+          </div>
+
+          <button type="submit" class="btn">Send forespørsel</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 SliceIt Pizza - Hubbel Kodeklubb</p>
+      </div>
+    </footer>  
+    <script src="script.js"></script>
+  </body>
+</html>
